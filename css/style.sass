@@ -1,77 +1,103 @@
 @font-face
-  font-family: 'Montserrat-Light'
-  src: url('../fonts/Montserrat-Light.eot') format('eot'), url('../fonts/Montserrat-Light.woff') format('woff'), url('../fonts/Montserrat-Light.ttf') format('truetype')
+  font-family: 'Gilroy-Light'
+  src: url('../fonts/Gilroy-Light.eot') format('eot'), url('../fonts/Gilroy-Light.woff') format('woff'), url('../fonts/Gilroy-Light.ttf') format('truetype')
 
 @font-face
-  font-family: 'Montserrat-Regular'
-  src: url('../fonts/Montserrat-Regular.eot') format('eot'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype')
+  font-family: 'Gilroy-Regular'
+  src: url('../fonts/Gilroy-Regular.eot') format('eot'), url('../fonts/Gilroy-Regular.woff') format('woff'), url('../fonts/Gilroy-Regular.ttf') format('truetype')
+
 @font-face
-  font-family: 'Montserrat-Medium'
-  src: url('../fonts/Montserrat-Medium.eot') format('eot'), url('../fonts/Montserrat-Medium.woff') format('woff'), url('../fonts/Montserrat-Medium.ttf') format('truetype')
+  font-family: 'Gilroy-Medium'
+  src: url('../fonts/Gilroy-Medium.eot') format('eot'), url('../fonts/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium.ttf') format('truetype')
+
 @font-face
-  font-family: 'Montserrat-Bold'
-  src: url('../fonts/Montserrat-Bold.eot') format('eot'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf') format('truetype')
+  font-family: 'Gilroy-Bold'
+  src: url('../fonts/Gilroy-Bold.eot') format('eot'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype')
+
 @font-face
-  font-family: 'Montserrat-Black'
-  src: url('../fonts/Montserrat-Black.eot') format('eot'), url('../fonts/Montserrat-Black.woff') format('woff'), url('../fonts/Montserrat-Black.ttf') format('truetype')
+  font-family: 'Gilroy-Black'
+  src: url('../fonts/Gilroy-Black.eot') format('eot'), url('../fonts/Gilroy-Black.woff') format('woff'), url('../fonts/Gilroy-Black.ttf') format('truetype')
 
 *
   box-sizing: border-box
+
 img
   max-width: 100%
+
 p
   margin: 0
+
 ul
   list-style: none
   padding: 0
   margin: 0
+
+.d-flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+
 .btn
   cursor: pointer
   outline: none
-  font-family: Montserrat-Medium, sans-serif
+  font-family: Gilroy-Medium, sans-serif
   color: #ffffff
   font-size: 16px
   transition: all .5s ease
   text-align: center
+  border-radius: 2px
+
 .btn-dark
-  border: 1px solid #000000
-  background: #000000
+  border: 1px solid #fff
+  background: transparent
+  color: #fff
+
 .btn-green
-  border: 1px solid #04AB74
-  background: #04AB74
+  border: 1px solid #0E6FFF
+  background: #0E6FFF
+
   &:hover
-    background: linear-gradient(180deg, #18b561 0%, #458964 100%)
+    background: linear-gradient(180deg, #0d55c0 0%, #0d55c0 100%)
 //border: 1px solid #fff
 
 .btn-primary
   border: 1px solid #fff
   background: transparent
+
   &:hover
-    background: linear-gradient(180deg, #0BB57A 0%, #108956 100%)
-    border: 1px solid #108956
+    background: linear-gradient(180deg, #0d55c0 0%, #0d55c0 100%)
+    border: 1px solid #0d55c0
+
 .container
   width: 95%
   max-width: 1200px
   margin: 0 auto
 
 header
+  background: #fff
+  .container
+    max-width: 100%
   .head_wrap
     display: flex
     justify-content: space-between
     align-items: center
     padding: 14px 0px
+
   nav
     ul
       display: flex
+
       li
         margin-right: 14px
+
         a
           padding: 0px 5px
-          color: #fff
+          color: #000
           font-size: 14px
-          font-family: Montserrat-Medium, sans-serif
+          font-family: Gilroy-Medium, sans-serif
           text-decoration: none
           position: relative
+
           &:after
             content: ''
             position: absolute
@@ -81,10 +107,12 @@ header
             height: 0px
             background: #fff
             transition: all .3s ease
+
           &:hover
             &:after
               height: 2px
               width: 100%
+
       li:last-child
         margin-right: 0
 
@@ -92,6 +120,7 @@ header
     button.btn-register
       width: 165px
       height: 48px
+
     button.btn-login
       width: 118px
       height: 48px
@@ -100,23 +129,150 @@ header
 
     a
       font-size: 14px
-      font-family: Montserrat-Medium, sans-serif
+      font-family: Gilroy-Medium, sans-serif
       color: #1C6AC4
       text-decoration: none
+
 .first_screen
   background: #165656 url(../img/main_bg.png) no-repeat center / cover
   height: 100vh
+
+.first_screen.inner
+  background: #165656 url(../img/faq-bg.jpg) no-repeat center / cover
+  height: auto
+
+  #main
+    padding: 150px 0px
+
+
+    .main_content
+      max-width: 100%
+      text-align: center
+      width: 100%
+
+    h1
+      text-align: center
+
+  header
+    background: #01100b
+
+.first_screen.inner.inner-about
+  background: url(../img/about-main.png) no-repeat center / cover
+
+.first_screen.inner.inner-contact
+  background: url("../img/contact-main.png") no-repeat center / cover
+
+.first_screen.trading
+  background: #010706
+  height: auto
+
+  header
+    background: #010706
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05)
+
+    .head_wrap
+      nav
+        ul
+          li
+            a
+              color: #ffffff
+
+    .control_panel
+      button.btn-register
+        width: 210px
+        height: 48px
+        color: #ffffff
+//border: 1px solid transparent
+//background: transparent!important
+#faq
+  padding-top: 50px
+  padding-bottom: 90px
+  background: #000000
+
+  h2
+    font-size: 52px
+    line-height: 63px
+    text-align: center
+    letter-spacing: 0.01em
+    margin: 0
+    color: #ffffff
+    font-family: Gilroy-Bold, sans-serif
+
+  p.info_faq
+    font-size: 18px
+    line-height: 30px
+    text-align: center
+    max-width: 800px
+    margin: 0 auto
+    letter-spacing: 0.01em
+    font-family: Gilroy-Medium, sans-serif
+    margin-top: 34px
+    margin-bottom: 50px
+    color: #ffffff
+
+    a
+      color: #0F9A64
+
+  #accordion
+    h3
+      font-size: 20px
+      line-height: 30px
+      font-family: Gilroy-Medium, sans-serif
+      border: none
+      outline: none
+      display: flex
+      justify-content: space-between
+      font-family: Gilroy-Bold, sans-serif
+      align-items: center
+      cursor: pointer
+      background: #191919
+      padding: 20px 30px
+      color: #ffffff
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+
+    p
+      font-size: 16px
+      padding: 0px 30px
+      line-height: 30px
+      color: #ffffff
+      margin: 0
+      font-family: Gilroy-Regular, sans-serif
+
+      a
+        color: #0F9A64
+
+    h3.ui-accordion-header-active i
+      color: #0F9A64
+      transform: rotate(-180deg)
+
+    .large_ans
+      p
+        margin-bottom: 40px
+
+        &:last-child
+          margin-bottom: 0
+
+
+  .ui-accordion-header-icon
+    display: none
+
 #main
   height: calc(100% - 80px)
   overflow: hidden
+
   .container
     display: flex
     align-items: center
     justify-content: space-between
     height: 100%
+    width: 100%
+    max-width: 100%
+
   .main_content
     text-align: left
     max-width: 600px
+    margin-left: 15%
+
     h1
       text-align: left
       //max-width: 940px
@@ -124,49 +280,74 @@ header
       margin: 0
       letter-spacing: 0.03em
       color: #FFFFFF
-      font-family: Montserrat-Bold, sans-serif
+      font-family: Gilroy-Bold, sans-serif
       font-size: 48px
-      line-height: 60px
+
     p
       //max-width: 560px
       text-align: left
-      font-size: 32px
-      line-height: 30px
+      font-size: 26px
+      line-height: 46px
       margin: 0
-      font-family: Montserrat-Medium, sans-serif
+      font-family: Gilroy-Light, sans-serif
       margin-top: 24px
-      margin-bottom: 24px
+      margin-bottom: 70px
       color: #ffffff
+
     div
       margin-bottom: 80px
+
       small
         display: block
         font-weight: 500
-        font-family: Montserrat-Regular, sans-serif
+        font-family: Gilroy-Regular, sans-serif
         font-size: 18px
         line-height: 28px
         color: #FFFFFF
+
     button
-      font-size: 18px
-      width: 285px
+      font-size: 16px
+      width: 175px
       //margin: 0 auto
       text-align: center
-      height: 64px
-      //transition: all .3s ease
+      height: 48px
+    button.btn-register
+      margin-right: 30px
+  //transition: all .3s ease
   .main_img
-    margin-right: -220px
+    //margin-right: -220px
 
+#active
+  padding-top: 34px
+  padding-bottom: 100px
+  background: url("../img/motivation-bg.png") no-repeat center / cover
 
-#advantages
-  background: #00140E
-  //border-bottom: 10px dashed #04AB74
+  h3
+    font-size: 48px
+    //line-height: px
+    color: #fff
+    font-family: Gilroy-Bold, sans-serif
+    text-align: center
+    margin: 0
+    margin-bottom: 24px
+
+  .tick
+    margin-bottom: 50px
+
+  .tradingview-widget-copyright
+    display: none
+
+#advantages, #pluses
+  background: #fff
+  //border-bottom: 10px dashed #0E6FFF
   //background: url("../img/a-bg.png") no-repeat center / cover
-  padding-top: 15px
-  padding-bottom: 120px
+  padding-top: 100px
+  padding-bottom: 150px
   position: relative
+
   .advantages-border
     width: 50%
-    border-bottom: 10px dashed #04AB74
+    border-bottom: 10px dashed #0E6FFF
     position: absolute
     bottom: 0
     right: 0
@@ -174,99 +355,288 @@ header
   h3
     font-size: 60px
     line-height: 73px
-    font-family: Montserrat-Bold, sans-serif
+    font-family: Gilroy-Bold, sans-serif
     margin: 0
     padding: 0
-    margin-bottom: 85px
+    margin-bottom: 18px
     text-align: center
-    color: #FFFFFF
-  .advantages-wrap
+    color: #000
+  p.sub-title
+    text-align: center
+    color: #959B9F
+    font-size: 24px
+    line-height: 34px
+  .why-choose
     display: flex
     justify-content: space-between
-    flex-wrap: wrap
-    .advantages-item
+    margin-top: 100px
+    .why-choose_left
+      ul.digit-list
+        width: 360px
+        margin-right: 100px
+            //margin-right: 15px
+      button
+        width: 175px
+        height: 48px
+    .why-choose_right
+      width: 100%
+ul.digit-list
+  padding: 0
+  margin: 0
+  list-style: none
+  li
+    display: flex
+    align-items: flex-start
+    margin-bottom: 20px
+    div
+      &:first-child
+        margin-right: 15px
+    span
+      color: #0E6FFF
+      display: inline
+    img
+      max-width: none
+
+#come
+  padding-top: 95px
+  padding-bottom: 120px
+  background: rgba(149, 155, 159, .1)
+  h3
+    text-align: center
+    color: #0A1B26
+    font-size: 48px
+    line-height: 59px
+    margin-top: 0
+    margin-bottom: 18px
+  p.sub-title
+    font-size: 24px
+    line-height: 34px
+    text-align: center
+    color: rgba(149, 155, 159, .3)
+    margin-bottom: 30px
+  .come-wrap
+    display: flex
+    justify-content: center
+    .come-item
       text-align: center
-      margin-bottom: 90px
-      width: 315px
-      font-family: Montserrat-Medium, sans-serif
-      font-size: 20px
-      line-height: 28px
+      margin-right: 200px
+      position: relative
+      &:last-child
+        margin-right: 0
+        &:after
+          display: none
+      &:after
+        display: block
+        content: ''
+        width: 155px
+        height: 1px
+        background: red
+        position: absolute
+        right: -170px
+        bottom: 10px
+#welcome-platform
+  h3
+    text-align: center
+    color: #0A1B26
+    font-size: 48px
+    line-height: 59px
+    margin-top: 0
+    margin-bottom: 18px
+  p.sub-title
+    font-size: 24px
+    line-height: 34px
+    text-align: center
+    color: rgba(149, 155, 159, .3)
+    margin-bottom: 30px
+  .welcome_wrap
+    display: flex
+#our_platform
+  background: url("../img/our-plat.png") no-repeat center / cover
+  color: #fff
+  padding-top: 70px
+  .container
+    display: flex
+    justify-content: space-between
+    img
+      display: block
+  .our_platform-info
+    max-width: 660px
+  h3
+    margin: 0
+    padding: 0
+    font-size: 60px
+    line-height: 74px
+    font-family: Gilroy-Bold, sans-serif
+  p
+    font-size: 30px
+    line-height: 46px
+    margin: 30px 0px
+    font-family: Gilroy-Medium, sans-serif
+  button
+    width: 175px
+    height: 48px
+
+#confidently, #our_statistic
+  padding: 150px 0px
+  h3
+    margin: 0
+    color: #0A1B26
+    font-size: 48px
+    font-family: Gilroy-Bold, sans-serif
+    text-align: center
+    line-height: 59px
+  .sub-title
+    margin: 0
+    font-size: 24px
+    margin-top: 18px
+    text-align: center
+    font-family: Gilroy-Medium, sans-serif
+
+    margin-bottom: 70px
+  .confidently-wrap
+    display: flex
+    justify-content: space-between
+    .confidently-item
+      margin-right: 30px
+      width: 100%
+      border-radius: 10px
+      border: 1px solid rgba(10, 27, 38, 0.2)
+      text-align: center
+      padding: 97px 70px 30px 70px
+      &:last-child
+        margin-right: 0
+      .confidently-item_title
+        margin-top: 30px
+        margin-bottom: 20px
+        color: #0A1B26
+        font-size: 24px
+        font-family: Gilroy-Bold, sans-serif
+      .confidently-item_info
+        color: #959B9F
+        font-size: 16px
+        line-height: 26px
+        font-family: Gilroy-Medium, sans-serif
+
+#ready_start
+  //padding-bottom: 100px
+  .ready
+    background: url("../img/ready-start.png") no-repeat center / cover
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding: 35px 100px 60px 100px
+    border-radius: 10px
+    .ready-info
+      width: 100%
+    h3
+      font-size: 60px
+      line-height: 74px
       color: #FFFFFF
-      .item-img
-        margin-bottom: 25px
+      margin: 0
+      margin-bottom: 40px
+      font-family: Gilroy-Bold, sans-serif
+    p
+      margin: 0
+      font-size: 30px
+      line-height: 46px
+      font-family: Gilroy-Regular, sans-serif
+
+      color: #FFFFFF
+    button
+      max-width: 380px
+      height: 77px
+      display: block
+      width: 100%
+#our_statistic
+  .confidently-wrap
+    .confidently-item
+      padding: 35px 20px 50px 20px
+
 #motivation
   background: url("../img/motivation-bg.png") no-repeat center / cover
   padding-top: 80px
   padding-bottom: 100px
+
   .motiv_wrap
     max-width: 805px
+
   h3
     margin: 0
     padding: 0
     font-size: 60px
     line-height: 73px
     color: #FFFFFF
-    font-family: Montserrat-Bold, sans-serif
+    font-family: Gilroy-Bold, sans-serif
+
   .mot-sub
     font-size: 32px
     line-height: 39px
     color: #FFFFFF
     margin-top: 24px
     margin-bottom: 36px
-    font-family: Montserrat-Medium, sans-serif
+    font-family: Gilroy-Medium, sans-serif
+
   p
     font-size: 18px
     line-height: 28px
-    font-family: Montserrat-Medium, sans-serif
+    font-family: Gilroy-Medium, sans-serif
     color: #FFFFFF
     margin-bottom: 36px
+
   button
     width: 280px
-    font-family: Montserrat-Medium, sans-serif
+    font-family: Gilroy-Medium, sans-serif
     height: 70px
     font-size: 16px
+
 #success
   background: url("../img/suc-bg.png") no-repeat center / cover
   padding-top: 45px
   padding-bottom: 90px
+
   h3
     font-size: 60px
     line-height: 73px
     margin-top: 0px
     text-align: center
-    font-family: Montserrat-Bold, sans-serif
+    font-family: Gilroy-Bold, sans-serif
     color: #FFFFFF
     margin-bottom: 80px
+
   .success-wrap
     display: flex
     justify-content: space-between
+
     .success-item
       width: 280px
       background: rgba(255, 255, 255, 0.1)
       backdrop-filter: blur(20px)
       padding: 40px 15px 30px 15px
-      border-top: 10px dashed #04AB74
+      border-top: 10px dashed #0E6FFF
+
       .digit
         font-size: 60px
         line-height: 73px
         text-align: center
         color: #FFFFFF
-        font-family: Montserrat-Bold, sans-serif
+        font-family: Gilroy-Bold, sans-serif
+
       h6
         margin: 0
         padding: 0
         font-size: 18px
         line-height: 28px
         text-align: center
-        font-family: Montserrat-Medium, sans-serif
+        font-family: Gilroy-Medium, sans-serif
         color: #FFFFFF
         margin-top: 15px
+
   .suc-bot
     text-align: center
     max-width: 810px
     margin: 0 auto
     margin-top: 80px
-    font-family: Montserrat-Medium, sans-serif
+    font-family: Gilroy-Medium, sans-serif
     font-size: 20px
     line-height: 28px
     text-align: center
@@ -276,26 +646,31 @@ header
   background: url("../img/repeat-bg.png") no-repeat center / cover
   padding-bottom: 100px
   padding-top: 90px
+
   .repeat-wrap
     display: flex
     justify-content: center
+
     h3
       font-size: 60px
       line-height: 73px
       color: #FFFFFF
-      font-family: Montserrat-Bold, sans-serif
+      font-family: Gilroy-Bold, sans-serif
       margin: 0
       padding: 0
       margin-right: 100px
+
     .reg-bl
       width: 100%
       max-width: 280px
+
       p
         font-size: 18px
         line-height: 28px
         color: #FFFFFF
-        font-family: Montserrat-Medium, sans-serif
+        font-family: Gilroy-Medium, sans-serif
         margin-bottom: 40px
+
       button
         width: 280px
         height: 70px
@@ -305,11 +680,12 @@ header
   background: url("../img/choose-bg.png") no-repeat center / cover
   padding-top: 80px
   padding-bottom: 110px
+
   h3
     font-size: 60px
     line-height: 65px
     color: #fff
-    font-family: Montserrat-Bold, sans-serif
+    font-family: Gilroy-Bold, sans-serif
     text-align: center
     margin: 0
     margin-bottom: 60px
@@ -317,6 +693,7 @@ header
   .packet_wrap
     display: flex
     justify-content: space-between
+
     .packet_item
       padding: 36px 24px
       background: rgba(255, 255, 255, 0.1)
@@ -326,46 +703,54 @@ header
       display: flex
       flex-direction: column
       justify-content: space-between
+
       .packet-img
         text-align: center
         margin-top: 15px
         margin-bottom: 15px
+
       h6
         font-size: 36px
         color: #fff
         margin: 0
-        font-family: Montserrat-Bold, sans-serif
+        font-family: Gilroy-Bold, sans-serif
         //letter-spacing: 0.2em
         text-align: center
-        //margin-top: 15px
+      //margin-top: 15px
       .price
         color: #6DBF81
-        font-family: Montserrat-Medium, sans-serif
+        font-family: Gilroy-Medium, sans-serif
         font-size: 24px
         letter-spacing: 0.02em
         text-align: center
+
       ul
         margin-top: 25px
         margin-bottom: 45px
+
         li
           margin-bottom: 15px
           font-size: 12px
           line-height: 24px
           color: #fff
-          font-family: Montserrat-Medium, sans-serif
+          font-family: Gilroy-Medium, sans-serif
           display: block
           text-align: center
           border-bottom: 1px dashed rgba(255, 255, 255, 0.2)
           padding-bottom: 5px
+
           div
             text-align: center
+
       .control
         text-align: center
+
         button
           width: 176px
           color: #fff
           height: 48px
           transition: all .5s ease
+
           &:hover
             background: #108956
             color: #fff
@@ -375,24 +760,29 @@ header
   padding-top: 60px
   padding-bottom: 140px
   background: url("../img/quality.png") no-repeat center / cover
+
   h3
     margin: 0
     padding: 0
     font-size: 60px
     line-height: 73px
     text-align: center
-    font-family: Montserrat-Bold, sans-serif
+    font-family: Gilroy-Bold, sans-serif
     margin-bottom: 100px
     text-align: center
     color: #FFFFFF
+
   .quality-wrap
     display: flex
     justify-content: space-between
+
     .quality-item
       max-width: 280px
+
       .qual-img
         text-align: center
         margin-bottom: 20px
+
       h6
         font-size: 20px
         line-height: 28px
@@ -400,33 +790,37 @@ header
         margin: 0
         padding: 0
         color: #FFFFFF
-        font-family: Montserrat-Medium, sans-serif
+        font-family: Gilroy-Medium, sans-serif
         margin-bottom: 12px
+
       p
         font-size: 18px
         line-height: 28px
         text-align: center
-        font-family: Montserrat-Medium, sans-serif
+        font-family: Gilroy-Medium, sans-serif
         color: #FFFFFF
 
 #questions
   background: url("../img/quest-bg.png") no-repeat center / cover
   padding-top: 70px
   padding-bottom: 80px
+
   h3
     font-size: 60px
-    font-family: Montserrat-Bold, sans-serif
+    font-family: Gilroy-Bold, sans-serif
     color: #FFFFFF
     text-align: center
     margin: 0
     margin-bottom: 25px
+
   .sub-title
     font-size: 32px
     line-height: 39px
-    font-family: Montserrat-Medium, sans-serif
+    font-family: Gilroy-Medium, sans-serif
     text-align: center
     color: #FFFFFF
     margin-bottom: 50px
+
   form
     background: rgba(255, 255, 255, 0.1)
     backdrop-filter: blur(20px)
@@ -434,14 +828,15 @@ header
     padding-bottom: 50px
     max-width: 460px
     margin: 0 auto
-    //border-top: 10px dashed #04AB74
+    //border-top: 10px dashed #0E6FFF
     label
       display: block
       font-size: 12px
-      font-family: Montserrat-Medium, sans-serif
+      font-family: Gilroy-Medium, sans-serif
       line-height: 15px
       margin-bottom: 4px
       color: #FFFFFF
+
     input
       width: 100%
       background: rgba(255, 255, 255, 0.1)
@@ -449,47 +844,51 @@ header
       border: none
       padding-left: 17px
       height: 60px
+
     ::-webkit-input-placeholder
-      font-family: Montserrat-Regular, sans-serif
+      font-family: Gilroy-Regular, sans-serif
+
     ::-moz-placeholder
-      font-family: Montserrat-Regularr, sans-serif
+      font-family: Gilroy-Regularr, sans-serif
+
     :-moz-placeholder
-      font-family: Montserrat-Regular, sans-serif
+      font-family: Gilroy-Regular, sans-serif
     :-ms-input-placeholder
-      font-family: Montserrat-Regular, sans-serif
+      font-family: Gilroy-Regular, sans-serif
+
     .form-group
       margin-bottom: 24px
+
     button
       height: 70px
       width: 100%
-
-
-
-
-
-
 
 
 footer
   padding-top: 90px
   padding-bottom: 40px
   background: #00100B
+
   .foot_wrap
     display: flex
     justify-content: space-between
     align-items: flex-start
+
   .logo
     max-width: 230px
+
     .soc
       justify-content: flex-start
       display: flex
       margin-top: 35px
       margin-bottom: 35px
+
       a
         margin-right: 23px
+
     p
       color: rgba(255, 255, 255, .5)
-      font-family: Montserrat-Regular, sans-serif
+      font-family: Gilroy-Regular, sans-serif
       font-size: 10px
       line-height: 18px
       margin-top: 8px
@@ -498,57 +897,71 @@ footer
     display: flex
     justify-content: space-between
     width: 370px
+
     li
       margin-bottom: 20px
+
       a
         color: #FFFFFF
         font-size: 15px
         text-decoration: none
         line-height: 18px
-        font-family: Montserrat-Regular, sans-serif
+        font-family: Gilroy-Regular, sans-serif
+
   .feedback
     width: 275px
+
     .address
       margin-bottom: 40px
+
     .address, .teleph
       font-size: 15px
       line-height: 28px
       color: #FFFFFF
-      font-family: Montserrat-Bold, sans-seri
+      font-family: Gilroy-Bold, sans-seri
+
       p
-        font-family: Montserrat-Regular, sans-serif
+        font-family: Gilroy-Regular, sans-serif
+
 .bottom-line
   background: rgba(0, 0, 0, 99)
   padding: 15px 0px
+
   .line-wrap
     display: flex
     justify-content: space-between
     align-items: center
+
     .email
       a
         font-size: 14px
         line-height: 17px
         color: #FFFFFF
         text-decoration: none
-        font-family: Montserrat-Regular, sans-serif
+        font-family: Gilroy-Regular, sans-serif
         opacity: 0.5
+
     p
       font-size: 14px
       line-height: 17px
       color: #FFFFFF
       text-decoration: none
-      font-family: Montserrat-Regular, sans-serif
+      font-family: Gilroy-Regular, sans-serif
       opacity: 0.5
+
     .bank_type
       display: flex
+
       div
         margin-right: 15px
+
 .copyright
   color: #F3F3F3
   font-size: 10px
   margin-top: 55px
   text-align: center
-  font-family: Montserrat-Regular, sans-serif
+  font-family: Gilroy-Regular, sans-serif
+
 .window-popup-container
   background-color: rgba(0, 0, 0, 0.7)
   position: fixed
@@ -564,45 +977,54 @@ footer
   height: 100%
   overflow: hidden
   z-index: 999
+
   .sign_wrapper
     //width: 100%
     width: 425px
     margin: 0 auto
     background: #fff
+
     .sign-head
       background: #ffffff
       padding: 0px 20px
       border-top-left-radius: 4px
       border-top-right-radius: 4px
       border-bottom: 1px solid #efefef
+
       ul
         margin: 0
         padding: 0
         list-style: none
         display: flex
+
         li
           width: 50%
           text-align: center
+
           a
             text-decoration: none
             font-size: 14px
-            font-family: Montserrat-Medium, sans-serif
+            font-family: Gilroy-Medium, sans-serif
             color: #7E8592
             line-height: 22px
             display: block
             padding: 13px 0px
             border-bottom: 2px solid transparent
+
           a.active
             color: #000000
             border-bottom: 2px solid #108956
+
     .sign-body
       padding: 20px
       border-bottom-left-radius: 4px
       border-bottom-right-radius: 4px
       max-height: 600px
       overflow-y: auto
+
       .data-field
         margin-bottom: 25px
+
       input
         width: 100%
         background: transparent
@@ -615,15 +1037,18 @@ footer
         border-radius: 4px
         font-size: 14px
         line-height: 20px
-        font-family: Montserrat-Regular, sans-serif
+        font-family: Gilroy-Regular, sans-serif
+
         &:focus
           border: 2px solid #108956
 
       button
         width: 100%
         height: 40px
+
       .bot
         text-align: center
+
       a.forgot
         font-size: 12px
         line-height: 15px
@@ -635,15 +1060,19 @@ footer
 
         display: inline-block
         margin-top: 20px
-        font-family: Montserrat-Regular, sans-serif
+        font-family: Gilroy-Regular, sans-serif
+
       .body-block
         display: none
+
       .body-block.active
         display: block
+
       .agree
         font-size: 12px
-        font-family: Montserrat-Regular, sans-serif
+        font-family: Gilroy-Regular, sans-serif
         color: #7E8592
+
   .reset_pass
     .sign_wrapper
       .sign-head
@@ -653,8 +1082,9 @@ footer
         text-transform: uppercase
         text-align: center
         padding: 13px 0px
-        font-family: Montserrat-Medium, sans-serif
+        font-family: Gilroy-Medium, sans-serif
         position: relative
+
         .close
           position: absolute
           right: 7px
@@ -663,21 +1093,26 @@ footer
       .sign-body
         p
           font-size: 14px
-          font-family: Montserrat-Regular, sans-serif
+          font-family: Gilroy-Regular, sans-serif
           line-height: 22px
           color: 000
           margin: 0
           margin-bottom: 10px
+
 .window-popup-container.active
   display: flex
+
 .iti.iti--allow-dropdown
   width: 100%
+
 .iti__selected-dial-code
-  font-family: Montserrat-Regular, sans-serif
+  font-family: Gilroy-Regular, sans-serif
 
 .sign-container
+
 .sign_wrapper
   position: relative
+
 .close
   position: absolute
   color: #ffffff
@@ -770,13 +1205,13 @@ input[type="checkbox"]:checked + label:after
   transition: .3s
   font-size: 14px
   line-height: 20px
-  font-family: Montserrat-Regular, sans-serif
+  font-family: Gilroy-Regular, sans-serif
   color: #7E8592
   background: #ffffff
   padding: 0px 4px
 
-.form-input:focus~.form-label,
-.form-input:not(:focus):valid~.form-label
+.form-input:focus ~ .form-label,
+.form-input:not(:focus):valid ~ .form-label
   top: -11px
   left: 10px
   color: #108956
@@ -785,22 +1220,216 @@ input[type="checkbox"]:checked + label:after
   top: -11px
   left: 10px
   color: #108956
+
 .form-input-not ~ .form-label.active
   top: -11px
   left: 10px
   color: #108956
+
 .valid
   font-family: Roboto-Regular, sans-serif
   margin-top: 5px
   color: #E85E59
 
 
-
 .btn-yellow
-  font-family: Montserrat-Bold, sans-serif
+  font-family: Gilroy-Bold, sans-serif
   background: #1C6AC4
   text-transform: uppercase
   color: #fff
+
+#about_sec
+  padding: 70px 0px
+  padding-bottom: 200px
+  background: #000 url("../img/about-bg.png") 50% 100% no-repeat
+
+  .about_wrap
+    display: flex
+    justify-content: space-between
+
+    .about_info
+      max-width: 645px
+
+      h5
+        font-size: 36px
+        line-height: 55px
+        letter-spacing: 0.02em
+        color: #ffffff
+        font-family: Gilroy-Bold, sans-serif
+        margin: 0
+        margin-bottom: 24px
+
+      p
+        font-size: 16px
+        line-height: 30px
+        letter-spacing: 0.03em
+        color: #fff
+        margin-bottom: 30px
+        font-family: Gilroy-Regular, sans-serif
+
+        &:last-child
+          margin-bottom: 0
+
+  .control
+    text-align: center
+    margin-top: 72px
+
+    button
+      width: 285px
+      height: 64px
+      margin: 0 auto
+
+
+#pluses
+  padding-top: 48px
+  padding-bottom: 90px
+  background: #00140E
+
+  h3
+    font-size: 40px
+    line-height: 48px
+    text-align: center
+    font-family: Gilroy-Bold, sans-serif
+    letter-spacing: 0.02em
+    color: #ffffff
+    margin: 0
+    margin-bottom: 70px
+
+  .pluses_wrap
+    display: flex
+    justify-content: center
+
+    .img
+      text-align: center
+
+    h6
+      font-size: 16px
+      line-height: 24px
+      text-align: center
+      letter-spacing: 0.03em
+      margin: 0
+      margin-top: 30px
+      margin-bottom: 13px
+      color: #ffffff
+      font-family: Gilroy-Bold, sans-serif
+
+    p
+      font-size: 12px
+      margin: 0
+      line-height: 26px
+      text-align: center
+      letter-spacing: 0.03em
+      color: #ffffff
+      max-width: 200px
+      margin: 0 auto
+      font-family: Gilroy-Medium, sans-serif
+
+    .pluses_item
+      margin-right: 70px
+
+      &:last-child
+        margin-right: 0
+
+#contacts
+  padding-top: 70px
+  padding-bottom: 150px
+  background: #000
+
+  h3
+    font-size: 52px
+    line-height: 63px
+    text-align: center
+    letter-spacing: 0.01em
+    font-family: Gilroy-Bold, sans-serif
+    color: #ffffff
+    margin: 0
+    margin-bottom: 50px
+
+  .contact_wrap
+    display: flex
+    justify-content: space-between
+
+    .contact_info
+      flex: 1
+      max-width: 490px
+
+      p
+        font-size: 18px
+        line-height: 30px
+        letter-spacing: 0.01em
+        color: #ffffff
+        font-family: Gilroy-Regular, sans-serif
+        margin: 0
+
+      h6
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.01em
+        margin: 0
+        color: #ffffff
+        margin-top: 55px
+        margin-bottom: 35px
+        font-family: Gilroy-Bold, sans-serif
+
+      p.address, p.address_feed
+        font-size: 15px
+        line-height: 30px
+        letter-spacing: 0.01em
+        color: #ffffff
+        font-family: Gilroy-Regular, sans-serif
+
+      p.address
+        margin-bottom: 35px
+
+    .contact_form
+      border-top: 10px dashed #0E6FFF
+      width: 590px
+      background: #191919
+      padding: 30px 100px
+      max-width: 590px
+
+      h5
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+        letter-spacing: 0.01em
+        font-family: Gilroy-Black, sans-serif
+        color: #ffffff
+
+      label
+        color: #ffffff
+        display: block
+        margin-bottom: 3px
+        font-family: Gilroy-Medium, sans-serif
+        font-size: 12px
+
+      form
+        background: #191919
+
+      input, textarea
+        width: 100%
+        background: #303030
+        //border: 1px solid #7E8592
+        border: none
+        border-radius: 4px
+        margin-bottom: 25px
+        padding-left: 12px
+        font-family: Gilroy-Regular, sans-serif
+
+      input
+        height: 50px
+
+      textarea
+        height: 100px
+        padding-top: 12px
+        resize: none
+        width: 100%
+
+      .control
+        button
+          width: 100%
+          height: 70px
+
 
 @media all and (max-width: 1220px)
   #about_sec .about_wrap .about_info
@@ -809,7 +1438,15 @@ input[type="checkbox"]:checked + label:after
     width: 24%
   #now .now_wrap .now_info
     max-width: 360px
+
 @media all and (max-width: 992px)
+  #contacts .contact_wrap
+    flex-direction: column
+  #contacts .contact_wrap .contact_info
+    max-width: 100%
+  #contacts .contact_wrap .contact_form
+    max-width: 100%
+    width: 100%
   footer .feedback
     width: 100%
   footer .logo
@@ -817,6 +1454,10 @@ input[type="checkbox"]:checked + label:after
     max-width: 100%
   footer .foot_menu
     width: 100%
+  #about_sec .about_wrap
+    flex-direction: column
+  #about_sec .about_wrap .about_info
+    max-width: 100%
   #repeat .repeat-wrap h3, #repeat2 .repeat-wrap h3
     margin-right: 25px
   #success .success-wrap
@@ -845,6 +1486,15 @@ input[type="checkbox"]:checked + label:after
     display: none
 
 @media all and (max-width: 768px)
+  #about_sec .about_wrap .about_info h5
+    font-size: 18px
+    line-height: 36px
+  #faq h2
+    font-size: 22px
+    line-height: 34px
+  #faq p.info_faq
+    font-size: 14px
+    line-height: 28px
   #advantages h3
     font-size: 32px
     line-height: 42px
@@ -897,11 +1547,27 @@ input[type="checkbox"]:checked + label:after
     flex-direction: column
   footer .foot_menu
     width: 100%
+
 @media all and (max-width: 620px)
   .window-popup-container .sign_wrapper .sign-body
     max-height: 350px
     overflow-y: auto
+
 @media all and (max-width: 576px)
+  #advantages .advantages-wrap .advantages-item, #pluses .advantages-wrap .advantages-item
+    width: 100%
+  #contacts h3
+    font-size: 30px
+    line-height: 40px
+  #contacts .contact_wrap .contact_form
+    padding: 20px
+  #pluses h3
+    font-size: 30px
+  #faq #accordion h3
+    font-size: 14px
+    line-height: 28px
+  .first_screen.trading header .control_panel button.btn-register
+    width: 160px
   #questions h3
     font-size: 40px
   #questions .sub-title
@@ -953,6 +1619,7 @@ input[type="checkbox"]:checked + label:after
     line-height: 38px
   #main .main_content p
     font-size: 17px
+
 @media all and (max-width: 480px)
   .sign-container .close, .window-popup-container .close
     right: -5px
@@ -961,6 +1628,7 @@ input[type="checkbox"]:checked + label:after
     width: 100%
   .window-popup
     width: 95%
+
 @media all and (max-width: 400px)
   header .control_panel button.btn-register
     margin-left: 10px

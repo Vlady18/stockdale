@@ -161,13 +161,23 @@ header
 
     h1
       text-align: center
+    h5
+      color: #FFFFFF
+      font-size: 30px
+      text-align: center
+      line-height: 46px
+      font-family: Gilroy-Regular, sans-serif
+      margin: 0
+      margin-top: 30px
+
 
   header
     background: #fff
 
 .first_screen.inner.inner-about
   background: url(../img/about-main.png) no-repeat center / cover
-
+.first_screen.inner.inner-cfd
+  background: url(../img/cfd.png) no-repeat center / cover
 .first_screen.inner.inner-contact
   background: url("../img/contact-main.png") no-repeat center / cover
 
@@ -285,11 +295,11 @@ header
     height: 100%
     width: 100%
     max-width: 100%
-
+  .main_content.index-main
+    margin-left: 15%
   .main_content
     text-align: left
     max-width: 600px
-    margin-left: 15%
 
     h1
       text-align: left
@@ -1380,46 +1390,7 @@ input[type="checkbox"]:checked + label:after
   text-transform: uppercase
   color: #fff
 
-#about_sec
-  padding: 70px 0px
-  padding-bottom: 200px
-  background: #000 url("../img/about-bg.png") 50% 100% no-repeat
 
-  .about_wrap
-    display: flex
-    justify-content: space-between
-
-    .about_info
-      max-width: 645px
-
-      h5
-        font-size: 36px
-        line-height: 55px
-        letter-spacing: 0.02em
-        color: #ffffff
-        font-family: Gilroy-Bold, sans-serif
-        margin: 0
-        margin-bottom: 24px
-
-      p
-        font-size: 16px
-        line-height: 30px
-        letter-spacing: 0.03em
-        color: #fff
-        margin-bottom: 30px
-        font-family: Gilroy-Regular, sans-serif
-
-        &:last-child
-          margin-bottom: 0
-
-  .control
-    text-align: center
-    margin-top: 72px
-
-    button
-      width: 285px
-      height: 64px
-      margin: 0 auto
 
 
 #pluses
@@ -1475,7 +1446,7 @@ input[type="checkbox"]:checked + label:after
 #contacts
   padding-top: 70px
   padding-bottom: 150px
-  background: #000
+  background: #fff
 
   h3
     font-size: 52px
@@ -1483,7 +1454,7 @@ input[type="checkbox"]:checked + label:after
     text-align: center
     letter-spacing: 0.01em
     font-family: Gilroy-Bold, sans-serif
-    color: #ffffff
+    color: #0A1B26
     margin: 0
     margin-bottom: 50px
 
@@ -1499,7 +1470,7 @@ input[type="checkbox"]:checked + label:after
         font-size: 18px
         line-height: 30px
         letter-spacing: 0.01em
-        color: #ffffff
+        color: #0A1B26
         font-family: Gilroy-Regular, sans-serif
         margin: 0
 
@@ -1508,7 +1479,7 @@ input[type="checkbox"]:checked + label:after
         line-height: 30px
         letter-spacing: 0.01em
         margin: 0
-        color: #ffffff
+        color: #0A1B26
         margin-top: 55px
         margin-bottom: 35px
         font-family: Gilroy-Bold, sans-serif
@@ -1517,16 +1488,15 @@ input[type="checkbox"]:checked + label:after
         font-size: 15px
         line-height: 30px
         letter-spacing: 0.01em
-        color: #ffffff
+        color: #0A1B26
         font-family: Gilroy-Regular, sans-serif
 
       p.address
         margin-bottom: 35px
 
     .contact_form
-      border-top: 10px dashed #0E6FFF
       width: 590px
-      background: #191919
+      background: #fff
       padding: 30px 100px
       max-width: 590px
 
@@ -1536,23 +1506,26 @@ input[type="checkbox"]:checked + label:after
         text-align: center
         letter-spacing: 0.01em
         font-family: Gilroy-Black, sans-serif
-        color: #ffffff
+        color: #0A1B26
 
       label
-        color: #ffffff
+        color: #0A1B26
         display: block
         margin-bottom: 3px
         font-family: Gilroy-Medium, sans-serif
         font-size: 12px
 
       form
-        background: #191919
+        background: #FFFFFF
+        border: 1px solid rgba(10, 27, 38, 0.2)
+        padding: 30px
+        border-radius: 10px
 
       input, textarea
         width: 100%
-        background: #303030
+        background: #fff
         //border: 1px solid #7E8592
-        border: none
+        border: 1px solid rgba(10, 27, 38, 0.2)
         border-radius: 4px
         margin-bottom: 25px
         padding-left: 12px
@@ -1571,8 +1544,40 @@ input[type="checkbox"]:checked + label:after
         button
           width: 100%
           height: 70px
+          border-radius: 4px
 
 
+#about-page, #cfd-page
+  padding-top: 120px
+  padding-bottom: 200px
+  h3
+    margin: 0
+    color: #0A1B26
+    text-align: center
+    font-size: 48px
+    font-family: Gilroy-Bold, sans-serif
+    margin-bottom: 25px
+
+  p
+    margin: 0
+    font-size: 18px
+    line-height: 26px
+    font-family: Gilroy-Medium, sans-serif
+    color: #959B9F
+    margin-bottom: 25px
+    span
+      color: #0E6FFF
+      font-family: Gilroy-Bold, sans-serif
+
+  h4
+    margin: 0
+    color: #0A1B26
+    font-size: 36px
+    text-align: center
+    font-family: Gilroy-Bold, sans-serif
+
+    margin-bottom: 25px
+    margin-top: 50px
 @media all and (max-width: 1220px)
   #about_sec .about_wrap .about_info
     max-width: 440px
@@ -1796,6 +1801,10 @@ input[type="checkbox"]:checked + label:after
     overflow-y: auto
 
 @media all and (max-width: 576px)
+  #contacts .contact_wrap .contact_form form
+    padding: 15px
+  #contacts .contact_wrap .contact_form
+    padding: 0
   #learn-more button
     width: 100%
   #advantages .advantages-wrap .advantages-item, #pluses .advantages-wrap .advantages-item
@@ -1804,12 +1813,13 @@ input[type="checkbox"]:checked + label:after
     font-size: 30px
     line-height: 40px
   #contacts .contact_wrap .contact_form
-    padding: 20px
+    padding: 0px
+    margin-top: 20px
   #pluses h3
     font-size: 30px
   #faq #accordion h3
-    font-size: 14px
-    line-height: 28px
+    font-size: 14px!important
+    line-height: 28px!important
   .first_screen.trading header .control_panel button.btn-register
     width: 160px
   #questions h3

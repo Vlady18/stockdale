@@ -172,12 +172,25 @@ header .control_panel a {
 .first_screen.inner #main h1 {
   text-align: center;
 }
+.first_screen.inner #main h5 {
+  color: #FFFFFF;
+  font-size: 30px;
+  text-align: center;
+  line-height: 46px;
+  font-family: Gilroy-Regular, sans-serif;
+  margin: 0;
+  margin-top: 30px;
+}
 .first_screen.inner header {
   background: #fff;
 }
 
 .first_screen.inner.inner-about {
   background: url(../img/about-main.png) no-repeat center/cover;
+}
+
+.first_screen.inner.inner-cfd {
+  background: url(../img/cfd.png) no-repeat center/cover;
 }
 
 .first_screen.inner.inner-contact {
@@ -293,10 +306,12 @@ header .control_panel a {
   width: 100%;
   max-width: 100%;
 }
+#main .main_content.index-main {
+  margin-left: 15%;
+}
 #main .main_content {
   text-align: left;
   max-width: 600px;
-  margin-left: 15%;
 }
 #main .main_content h1 {
   text-align: left;
@@ -1448,48 +1463,6 @@ input[type=checkbox]:checked + label:after {
   color: #fff;
 }
 
-#about_sec {
-  padding: 70px 0px;
-  padding-bottom: 200px;
-  background: #000 url("../img/about-bg.png") 50% 100% no-repeat;
-}
-#about_sec .about_wrap {
-  display: flex;
-  justify-content: space-between;
-}
-#about_sec .about_wrap .about_info {
-  max-width: 645px;
-}
-#about_sec .about_wrap .about_info h5 {
-  font-size: 36px;
-  line-height: 55px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  font-family: Gilroy-Bold, sans-serif;
-  margin: 0;
-  margin-bottom: 24px;
-}
-#about_sec .about_wrap .about_info p {
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: #fff;
-  margin-bottom: 30px;
-  font-family: Gilroy-Regular, sans-serif;
-}
-#about_sec .about_wrap .about_info p:last-child {
-  margin-bottom: 0;
-}
-#about_sec .control {
-  text-align: center;
-  margin-top: 72px;
-}
-#about_sec .control button {
-  width: 285px;
-  height: 64px;
-  margin: 0 auto;
-}
-
 #pluses {
   padding-top: 48px;
   padding-bottom: 90px;
@@ -1544,7 +1517,7 @@ input[type=checkbox]:checked + label:after {
 #contacts {
   padding-top: 70px;
   padding-bottom: 150px;
-  background: #000;
+  background: #fff;
 }
 #contacts h3 {
   font-size: 52px;
@@ -1552,7 +1525,7 @@ input[type=checkbox]:checked + label:after {
   text-align: center;
   letter-spacing: 0.01em;
   font-family: Gilroy-Bold, sans-serif;
-  color: #ffffff;
+  color: #0A1B26;
   margin: 0;
   margin-bottom: 50px;
 }
@@ -1568,7 +1541,7 @@ input[type=checkbox]:checked + label:after {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.01em;
-  color: #ffffff;
+  color: #0A1B26;
   font-family: Gilroy-Regular, sans-serif;
   margin: 0;
 }
@@ -1577,7 +1550,7 @@ input[type=checkbox]:checked + label:after {
   line-height: 30px;
   letter-spacing: 0.01em;
   margin: 0;
-  color: #ffffff;
+  color: #0A1B26;
   margin-top: 55px;
   margin-bottom: 35px;
   font-family: Gilroy-Bold, sans-serif;
@@ -1586,16 +1559,15 @@ input[type=checkbox]:checked + label:after {
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.01em;
-  color: #ffffff;
+  color: #0A1B26;
   font-family: Gilroy-Regular, sans-serif;
 }
 #contacts .contact_wrap .contact_info p.address {
   margin-bottom: 35px;
 }
 #contacts .contact_wrap .contact_form {
-  border-top: 10px dashed #0E6FFF;
   width: 590px;
-  background: #191919;
+  background: #fff;
   padding: 30px 100px;
   max-width: 590px;
 }
@@ -1605,22 +1577,25 @@ input[type=checkbox]:checked + label:after {
   text-align: center;
   letter-spacing: 0.01em;
   font-family: Gilroy-Black, sans-serif;
-  color: #ffffff;
+  color: #0A1B26;
 }
 #contacts .contact_wrap .contact_form label {
-  color: #ffffff;
+  color: #0A1B26;
   display: block;
   margin-bottom: 3px;
   font-family: Gilroy-Medium, sans-serif;
   font-size: 12px;
 }
 #contacts .contact_wrap .contact_form form {
-  background: #191919;
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 27, 38, 0.2);
+  padding: 30px;
+  border-radius: 10px;
 }
 #contacts .contact_wrap .contact_form input, #contacts .contact_wrap .contact_form textarea {
   width: 100%;
-  background: #303030;
-  border: none;
+  background: #fff;
+  border: 1px solid rgba(10, 27, 38, 0.2);
   border-radius: 4px;
   margin-bottom: 25px;
   padding-left: 12px;
@@ -1638,6 +1613,41 @@ input[type=checkbox]:checked + label:after {
 #contacts .contact_wrap .contact_form .control button {
   width: 100%;
   height: 70px;
+  border-radius: 4px;
+}
+
+#about-page, #cfd-page {
+  padding-top: 120px;
+  padding-bottom: 200px;
+}
+#about-page h3, #cfd-page h3 {
+  margin: 0;
+  color: #0A1B26;
+  text-align: center;
+  font-size: 48px;
+  font-family: Gilroy-Bold, sans-serif;
+  margin-bottom: 25px;
+}
+#about-page p, #cfd-page p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: Gilroy-Medium, sans-serif;
+  color: #959B9F;
+  margin-bottom: 25px;
+}
+#about-page p span, #cfd-page p span {
+  color: #0E6FFF;
+  font-family: Gilroy-Bold, sans-serif;
+}
+#about-page h4, #cfd-page h4 {
+  margin: 0;
+  color: #0A1B26;
+  font-size: 36px;
+  text-align: center;
+  font-family: Gilroy-Bold, sans-serif;
+  margin-bottom: 25px;
+  margin-top: 50px;
 }
 
 @media all and (max-width: 1220px) {
@@ -2013,6 +2023,14 @@ input[type=checkbox]:checked + label:after {
   }
 }
 @media all and (max-width: 576px) {
+  #contacts .contact_wrap .contact_form form {
+    padding: 15px;
+  }
+
+  #contacts .contact_wrap .contact_form {
+    padding: 0;
+  }
+
   #learn-more button {
     width: 100%;
   }
@@ -2027,7 +2045,8 @@ input[type=checkbox]:checked + label:after {
   }
 
   #contacts .contact_wrap .contact_form {
-    padding: 20px;
+    padding: 0px;
+    margin-top: 20px;
   }
 
   #pluses h3 {
@@ -2035,8 +2054,8 @@ input[type=checkbox]:checked + label:after {
   }
 
   #faq #accordion h3 {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 14px !important;
+    line-height: 28px !important;
   }
 
   .first_screen.trading header .control_panel button.btn-register {

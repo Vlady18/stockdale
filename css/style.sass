@@ -92,9 +92,9 @@ header
 
         a
           padding: 0px 5px
-          color: #000
+          color: #0A1B26
           font-size: 14px
-          font-family: Gilroy-Medium, sans-serif
+          font-family: Gilroy-Bold, sans-serif
           text-decoration: none
           position: relative
 
@@ -122,9 +122,13 @@ header
       height: 48px
 
     button.btn-login
-      width: 118px
       height: 48px
       margin-right: 22px
+      border: none
+      background: transparent
+      color: #000
+      font-family: Gilroy-Bold, sans-serif
+
 
 
     a
@@ -134,11 +138,11 @@ header
       text-decoration: none
 
 .first_screen
-  background: #165656 url(../img/main_bg.png) no-repeat center / cover
+  background: #0a1b26 url(../img/main_bg.png) no-repeat center / cover
   height: 100vh
 
 .first_screen.inner
-  background: #165656 url(../img/faq-bg.jpg) no-repeat center / cover
+  background: #ffffff url(../img/faq-bg.jpg) no-repeat center / cover
   height: auto
 
   #main
@@ -239,10 +243,10 @@ header
       font-family: Gilroy-Regular, sans-serif
 
       a
-        color: #0F9A64
+        color: #0E6FFF
 
     h3.ui-accordion-header-active i
-      color: #0F9A64
+      color: #0E6FFF
       transform: rotate(-180deg)
 
     .large_ans
@@ -259,6 +263,15 @@ header
 #main
   height: calc(100% - 80px)
   overflow: hidden
+  position: relative
+  .trading-widget_line
+    position: absolute
+    bottom: 0
+    width: 100%
+    background: #0A1B26
+    display: block
+    padding: 0
+    margin: 0
 
   .container
     display: flex
@@ -353,8 +366,8 @@ header
     right: 0
 
   h3
-    font-size: 60px
-    line-height: 73px
+    font-size: 48px
+    line-height: 60px
     font-family: Gilroy-Bold, sans-serif
     margin: 0
     padding: 0
@@ -363,7 +376,8 @@ header
     color: #000
   p.sub-title
     text-align: center
-    color: #959B9F
+    color: rgba(149, 155, 159, .9)
+    font-family: Gilroy-Medium, sans-serif
     font-size: 24px
     line-height: 34px
   .why-choose
@@ -378,6 +392,8 @@ header
       button
         width: 175px
         height: 48px
+        font-family: Gilroy-Bold, sans-serif
+        font-size: 16px
     .why-choose_right
       width: 100%
 ul.digit-list
@@ -388,11 +404,18 @@ ul.digit-list
     display: flex
     align-items: flex-start
     margin-bottom: 20px
+    color: #0A1B26
+    font-size: 16px
+    line-height: 19px
+    font-family: Gilroy-Medium, sans-serif
+
     div
       &:first-child
         margin-right: 15px
     span
       color: #0E6FFF
+      font-family: Gilroy-Bold, sans-serif
+
       display: inline
     img
       max-width: none
@@ -405,15 +428,18 @@ ul.digit-list
     text-align: center
     color: #0A1B26
     font-size: 48px
+    font-family: Gilroy-Bold, sans-serif
+
     line-height: 59px
     margin-top: 0
     margin-bottom: 18px
   p.sub-title
+    font-family: Gilroy-Medium, sans-serif
     font-size: 24px
     line-height: 34px
     text-align: center
-    color: rgba(149, 155, 159, .3)
-    margin-bottom: 30px
+    color: rgba(149, 155, 159, .7)
+    margin-bottom: 60px
   .come-wrap
     display: flex
     justify-content: center
@@ -421,6 +447,12 @@ ul.digit-list
       text-align: center
       margin-right: 200px
       position: relative
+      img
+        margin-bottom: 30px
+      .title
+        font-size: 24px
+        font-family: Gilroy-Bold, sans-serif
+
       &:last-child
         margin-right: 0
         &:after
@@ -430,13 +462,15 @@ ul.digit-list
         content: ''
         width: 155px
         height: 1px
-        background: red
+        background: rgba(149, 155, 159, .8)
         position: absolute
         right: -170px
         bottom: 10px
 #welcome-platform
+  padding: 100px 0px
   h3
     text-align: center
+    font-family: Gilroy-Bold, sans-serif
     color: #0A1B26
     font-size: 48px
     line-height: 59px
@@ -445,11 +479,23 @@ ul.digit-list
   p.sub-title
     font-size: 24px
     line-height: 34px
+    font-family: Gilroy-Medium, sans-serif
     text-align: center
-    color: rgba(149, 155, 159, .3)
-    margin-bottom: 30px
+    color: rgba(149, 155, 159, .9)
+    margin-bottom: 50px
   .welcome_wrap
     display: flex
+    justify-content: space-between
+  .welcome_desc
+    margin-top: -30px
+    margin-right: 50px
+  .welcome_info
+    max-width: 365px
+    button
+      width: 175px
+      height: 48px
+      font-size: 16px
+      margin-top: 30px
 #our_platform
   background: url("../img/our-plat.png") no-repeat center / cover
   color: #fff
@@ -488,7 +534,8 @@ ul.digit-list
   .sub-title
     margin: 0
     font-size: 24px
-    margin-top: 18px
+    margin-top: 25px
+    color: rgba(149, 155, 159, .7)
     text-align: center
     font-family: Gilroy-Medium, sans-serif
 
@@ -551,6 +598,97 @@ ul.digit-list
   .confidently-wrap
     .confidently-item
       padding: 35px 20px 50px 20px
+
+
+#articles
+  padding-top: 105px
+  padding-bottom: 85px
+  background: rgba(149, 155, 152, .1)
+  h3
+    margin: 0
+    color: #0A1B26
+    font-size: 48px
+    font-family: Gilroy-Bold, sans-serif
+    text-align: center
+    line-height: 59px
+    margin-bottom: 78px
+  .articles_wrap
+    display: flex
+    justify-content: space-between
+    .article
+      width: 100%
+      margin-right: 30px
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      background: #FFFFFF
+      border: 1px solid rgba(10, 27, 38, 0.2)
+      border-radius: 10px 10px 0px 0px
+      .article-info
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        padding: 0px 20px 20px 20px
+      .article-img
+        background: url("../img/article.jpg") no-repeat center/ cover
+        height: 230px
+        width: 100%
+      .article-title
+        font-size: 26px
+        line-height: 32px
+        font-family: Gilroy-Bold, sans-serif
+        color: #000000
+        margin-top: 20px
+        margin-bottom: 50px
+      button
+        width: 175px
+        height: 48px
+
+#learn-more
+  padding: 108px 0px 118px 0px
+  background: url("../img/more-bg.jpg") no-repeat center / cover
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+  h3
+    margin: 0
+    font-size: 60px
+    line-height: 74px
+    margin-bottom: 30px
+    font-family: Gilroy-Bold, sans-serif
+    text-align: center
+    color: #FFFFFF
+  .sub-title
+    margin: 0
+    color: #FFFFFF
+    font-family: Gilroy-Regular, sans-serif
+    font-size: 30px
+    line-height: 46px
+    margin-bottom: 60px
+  button
+    width: 380px
+    height: 75px
+    font-size: 24px
+
+
+#companies
+  padding-top: 175px
+  padding-bottom: 150px
+  .companies-wrap
+    display: flex
+    //justify-content: space-between
+    justify-content: center
+
+    margin-bottom: 50px
+
+    .comp-img
+      margin-right: 50px
+      &:last-child
+        margin-right: 0
+  .companies-wrap.justify-center
+    justify-content: center
+
 
 #motivation
   background: url("../img/motivation-bg.png") no-repeat center / cover
@@ -865,63 +1003,60 @@ ul.digit-list
 
 
 footer
-  padding-top: 90px
-  padding-bottom: 40px
-  background: #00100B
-
-  .foot_wrap
-    display: flex
-    justify-content: space-between
-    align-items: flex-start
-
-  .logo
-    max-width: 230px
-
-    .soc
-      justify-content: flex-start
+  .pre_foot
+    background: #0A1B26
+    padding: 50px 0px
+    &-wrap
       display: flex
-      margin-top: 35px
-      margin-bottom: 35px
-
-      a
-        margin-right: 23px
-
-    p
-      color: rgba(255, 255, 255, .5)
-      font-family: Gilroy-Regular, sans-serif
-      font-size: 10px
-      line-height: 18px
-      margin-top: 8px
-
-  .foot_menu
-    display: flex
-    justify-content: space-between
-    width: 370px
-
-    li
-      margin-bottom: 20px
-
-      a
-        color: #FFFFFF
-        font-size: 15px
-        text-decoration: none
-        line-height: 18px
-        font-family: Gilroy-Regular, sans-serif
-
-  .feedback
-    width: 275px
-
-    .address
-      margin-bottom: 40px
-
-    .address, .teleph
-      font-size: 15px
-      line-height: 28px
-      color: #FFFFFF
-      font-family: Gilroy-Bold, sans-seri
-
+      justify-content: space-between
+      ul
+        margin: 0
+        padding: 0
+        list-style: none
+        a
+          font-size: 14px
+          color: #959B9F
+          font-family: Gilroy-Regular, sans-serif
+          display: block
+          margin-bottom: 12px
+          line-height: 24px
+          text-decoration: none
+        a.title
+          font-size: 18px
+          line-height: 28px
+          margin-bottom: 24px
+          color: #FFFFFF
+          font-family: Gilroy-Bold, sans-serif
+  .foot-boot
+    background: #050F15
+    padding: 40px 0px
+    .foot-info
+      margin-bottom: 30px
       p
-        font-family: Gilroy-Regular, sans-serif
+        margin: 0
+        padding: 0
+        margin-bottom: 15px
+        font-size: 16px
+        line-height: 20px
+        color: #959B9F
+        font-family: Gilroy-Bold, sans-serif
+    .foot-line
+      border-top: 1px solid #959B9F
+      padding-top: 40px
+      display: flex
+      font-family: Gilroy-Regular, sans-serif
+      justify-content: space-between
+      color: #D9DBE1
+      font-size: 12px
+      text-decoration: none
+      a
+        text-decoration: none
+        font-size: 12px
+        color: #D9DBE1
+        margin-left: 55px
+        &:last-child
+          margin-right: 0
+
 
 .bottom-line
   background: rgba(0, 0, 0, 99)
@@ -1013,7 +1148,7 @@ footer
 
           a.active
             color: #000000
-            border-bottom: 2px solid #108956
+            border-bottom: 2px solid #0E6FFF
 
     .sign-body
       padding: 20px
@@ -1214,17 +1349,17 @@ input[type="checkbox"]:checked + label:after
 .form-input:not(:focus):valid ~ .form-label
   top: -11px
   left: 10px
-  color: #108956
+  color: #0E6FFF
 
 .form-input-not:focus ~ .form-label
   top: -11px
   left: 10px
-  color: #108956
+  color: #0E6FFF
 
 .form-input-not ~ .form-label.active
   top: -11px
   left: 10px
-  color: #108956
+  color: #0E6FFF
 
 .valid
   font-family: Roboto-Regular, sans-serif
@@ -1438,8 +1573,27 @@ input[type="checkbox"]:checked + label:after
     width: 24%
   #now .now_wrap .now_info
     max-width: 360px
+  .our_platform-img
+    display: none
+  #our_platform
+    padding-bottom: 50px
+
 
 @media all and (max-width: 992px)
+  #welcome-platform .welcome_wrap
+    flex-direction: column
+  #welcome-platform .welcome_desc
+    margin-top: 0
+    margin-right: 0
+  #welcome-platform .welcome_info
+    width: 100%
+    max-width: 100%
+  #advantages .why-choose
+    flex-direction: column
+  #advantages .why-choose .why-choose_left ul.digit-list
+    width: 100%
+  .why-choose_left
+    margin-bottom: 30px
   #contacts .contact_wrap
     flex-direction: column
   #contacts .contact_wrap .contact_info
@@ -1486,6 +1640,33 @@ input[type="checkbox"]:checked + label:after
     display: none
 
 @media all and (max-width: 768px)
+  #our_platform p
+    font-size: 22px
+    line-height: 34px
+  #come
+    padding: 50px 0px
+  #come h3
+    font-size: 32px
+    line-height: 34px
+  section h3
+    font-size: 32px!important
+    line-height: 34px!important
+  p.sub-title
+    font-size: 16px!important
+    line-height: 24px!important
+  #come .come-wrap
+    flex-direction: column
+    align-items: center
+  #come .come-wrap .come-item:after
+    display: none
+  #come .come-wrap .come-item
+    margin-right: 0
+    margin-bottom: 40px
+  #advantages .why-choose .why-choose_right
+    overflow-x: scroll
+    .tradingview-widget-container
+      width: 650px!important
+      overflow-x: scroll
   #about_sec .about_wrap .about_info h5
     font-size: 18px
     line-height: 36px
@@ -1614,11 +1795,18 @@ input[type="checkbox"]:checked + label:after
     height: calc(100vh - 80px)
   .first_screen.inner #main
     height: auto
+  #main .main_content
+    margin-left: 0
+    padding: 0px 20px
   #main .main_content h1
     font-size: 27px
     line-height: 38px
   #main .main_content p
     font-size: 17px
+    margin: 10px 0px
+  #main .main_content button.btn-register
+    margin-right: 0
+    margin-bottom: 10px
 
 @media all and (max-width: 480px)
   .sign-container .close, .window-popup-container .close

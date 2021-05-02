@@ -117,6 +117,10 @@ header
         margin-right: 0
 
   .control_panel
+    display: flex
+    align-items: center
+    .lang
+      margin-right: 20px
     button.btn-register
       width: 165px
       height: 48px
@@ -144,6 +148,7 @@ header
 .first_screen.inner
   background: #ffffff url(../img/faq-bg.jpg) no-repeat center / cover
   height: auto
+  border-bottom: 1px solid rgba(149, 155, 159, .9)
 
   #main
     padding: 150px 0px
@@ -158,7 +163,7 @@ header
       text-align: center
 
   header
-    background: #01100b
+    background: #fff
 
 .first_screen.inner.inner-about
   background: url(../img/about-main.png) no-repeat center / cover
@@ -167,11 +172,11 @@ header
   background: url("../img/contact-main.png") no-repeat center / cover
 
 .first_screen.trading
-  background: #010706
+  background: #FFFFFF
   height: auto
 
   header
-    background: #010706
+    background: #FFFFFF
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05)
 
     .head_wrap
@@ -179,7 +184,7 @@ header
         ul
           li
             a
-              color: #ffffff
+              color: #000000
 
     .control_panel
       button.btn-register
@@ -191,7 +196,7 @@ header
 #faq
   padding-top: 50px
   padding-bottom: 90px
-  background: #000000
+  background: #FFFFFF
 
   h2
     font-size: 52px
@@ -199,7 +204,7 @@ header
     text-align: center
     letter-spacing: 0.01em
     margin: 0
-    color: #ffffff
+    color: #0A1B26
     font-family: Gilroy-Bold, sans-serif
 
   p.info_faq
@@ -212,10 +217,10 @@ header
     font-family: Gilroy-Medium, sans-serif
     margin-top: 34px
     margin-bottom: 50px
-    color: #ffffff
+    color: #0A1B26
 
     a
-      color: #0F9A64
+      color: #0E6FFF
 
   #accordion
     h3
@@ -229,16 +234,16 @@ header
       font-family: Gilroy-Bold, sans-serif
       align-items: center
       cursor: pointer
-      background: #191919
+      background: #F3F3F3
       padding: 20px 30px
-      color: #ffffff
+      color: #0A1B26
       border-bottom: 1px solid rgba(0, 0, 0, 0.2)
 
     p
       font-size: 16px
       padding: 0px 30px
       line-height: 30px
-      color: #ffffff
+      color: #0A1B26
       margin: 0
       font-family: Gilroy-Regular, sans-serif
 
@@ -333,7 +338,7 @@ header
 #active
   padding-top: 34px
   padding-bottom: 100px
-  background: url("../img/motivation-bg.png") no-repeat center / cover
+  //background: url("../img/motivation-bg.png") no-repeat center / cover
 
   h3
     font-size: 48px
@@ -640,7 +645,9 @@ ul.digit-list
         color: #000000
         margin-top: 20px
         margin-bottom: 50px
-      button
+      button, a
+        text-decoration: none
+        line-height: 45px
         width: 175px
         height: 48px
 
@@ -1577,9 +1584,34 @@ input[type="checkbox"]:checked + label:after
     display: none
   #our_platform
     padding-bottom: 50px
+  #confidently .confidently-wrap .confidently-item, #our_statistic .confidently-wrap .confidently-item
+    padding: 50px
 
 
 @media all and (max-width: 992px)
+  footer .foot-boot .foot-line
+    flex-direction: column
+    align-items: center
+  footer .foot-boot .foot-line a
+    margin-left: 0
+    margin-bottom: 10px
+  .policy-list
+    display: flex
+    align-items: center
+    flex-direction: column
+  footer .pre_foot-wrap
+    flex-direction: column
+    align-items: center
+  footer .pre_foot-wrap ul
+    width: 100%
+  #confidently .confidently-wrap .confidently-item, #our_statistic .confidently-wrap .confidently-item
+    margin-right: 0
+  .confidently-wrap
+    flex-direction: column
+    align-items: center
+    .confidently-item
+      margin-bottom: 50px
+      max-width: 600px
   #welcome-platform .welcome_wrap
     flex-direction: column
   #welcome-platform .welcome_desc
@@ -1604,7 +1636,6 @@ input[type="checkbox"]:checked + label:after
   footer .feedback
     width: 100%
   footer .logo
-    width: 100%
     max-width: 100%
   footer .foot_menu
     width: 100%
@@ -1640,6 +1671,36 @@ input[type="checkbox"]:checked + label:after
     display: none
 
 @media all and (max-width: 768px)
+  #companies
+    padding: 50px 0px
+  #companies .companies-wrap
+    margin-bottom: 0
+    flex-direction: column
+    align-items: center
+  #companies .companies-wrap .comp-img
+    margin-right: 0
+  .articles_wrap
+    flex-direction: column
+    align-items: center
+  #articles .articles_wrap .article
+    margin-right: 0
+    margin-bottom: 30px
+    max-width: 500px
+
+  #ready_start .ready
+    flex-direction: column
+    align-items: center
+  #ready_start .ready button
+    width: 100%
+    margin-top: 50px
+    max-width: 100%
+  #ready_start .ready
+    padding: 20px
+  #ready_start .ready p
+    font-size: 24px
+    line-height: 34px
+  #confidently, #our_statistic
+    padding: 50px 0px
   #our_platform p
     font-size: 22px
     line-height: 34px
@@ -1735,6 +1796,8 @@ input[type="checkbox"]:checked + label:after
     overflow-y: auto
 
 @media all and (max-width: 576px)
+  #learn-more button
+    width: 100%
   #advantages .advantages-wrap .advantages-item, #pluses .advantages-wrap .advantages-item
     width: 100%
   #contacts h3

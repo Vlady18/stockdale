@@ -4,6 +4,12 @@ $(function(){
     //     $('.window-popup-container.sign-container').addClass('active');
     // });
 
+    $('.mobile').on('click', function(){
+        $(this).toggleClass('active');
+        $('.head_wrap nav').toggleClass('mob_active');
+    })
+
+
     $('.btn-login').on('click', function(e){
         e.preventDefault();
         $('.sign-container .sign-head a').removeClass('active');
